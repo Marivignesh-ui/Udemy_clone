@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Context path="DerbyTomcat">
+    <Resource 
+        name="jdbc/udemy_clone"
+        auth="Container"
+        type="javax.sql.DataSource"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/udemy_clone"
+        username="root"
+        password=""
+        maxActive="10"
+        maxIdle="2"
+    />
+</Context>

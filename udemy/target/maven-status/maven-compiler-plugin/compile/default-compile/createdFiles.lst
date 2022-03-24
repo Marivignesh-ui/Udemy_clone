@@ -1,1 +1,6 @@
-com\ps\mari\App.class
+com\ps\repository\CourseRepositoryImplementation.class
+com\ps\domain\Course.class
+com\ps\repository\CourseRepository.class
+com\ps\domain\App.class
+com\ps\repository\DBConnectionManager.class
+com\ps\repository\test.class

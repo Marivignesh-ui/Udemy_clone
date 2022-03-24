@@ -1,4 +1,4 @@
-package com.ps.mari;
+package com.ps.domain;
 
 /**
  * Hello world!
