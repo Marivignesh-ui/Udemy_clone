@@ -1,8 +1,13 @@
 E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\repository\DBConnectionManager.java
-E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\repository\CourseRepository.java
-E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\repository\test.java
 E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\repository\CourseRepositoryImplementation.java
 E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\controller\CourseController.java
-E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\domain\Course.java
 E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\domain\App.java
+E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\domain\User.java
+E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\controller\UserController.java
+E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\repository\CourseRepository.java
+E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\repository\test.java
+E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\repository\UserRepositoryImpl.java
+E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\domain\Course.java
+E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\repository\UserRepository.java
 E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\services\CourseService.java
+E:\Purpleslate\Projects\Udemy_clone\udemy\src\main\java\com\ps\services\UserService.java

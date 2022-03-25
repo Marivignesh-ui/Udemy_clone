@@ -1,5 +1,10 @@
 package com.ps.repository;
 
-public class UserRepository {
-    
+import java.util.List;
+
+import com.ps.domain.User;
+
+public interface UserRepository {
+    public User create(User user);
+    public List<User> getUsers();
 }
