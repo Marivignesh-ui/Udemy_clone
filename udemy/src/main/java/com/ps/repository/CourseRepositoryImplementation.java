@@ -2,7 +2,6 @@ package com.ps.repository;
 
 import java.sql.Connection;
 import java.sql.Date;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -11,13 +10,24 @@ import javax.sql.DataSource;
 
 import com.ps.domain.Course;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class CourseRepositoryImplementation implements CourseRepository{
-    public Course create(Course course) throws SQLException, NamingException{
-        //DataSource ds=DBConnectionManager.getDBConnection();
-        try(//Connection connection=ds.getConnection();
-            Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/udemy_clone?user=root");
+    private static final Logger logger = LogManager.getLogger(CourseRepositoryImplementation.class);
+    public Course create(Course course){
+        DataSource ds=null;
+        try {
+            ds = DBConnectionManager.getDBConnection();
+        } catch (NamingException e) {
+            e.printStackTrace();
+            logger.info(e);
+        }
+        try(Connection connection=ds.getConnection();
+            //Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/udemy_clone?user=root");
             PreparedStatement statement=connection.prepareStatement("insert into Course values(?,?,?,?,?,?,?,?,?,?,?,?,?)");
         ){
+            logger.info("DB connection success");
             statement.setInt(1, course.getId());
             statement.setString(2, course.getTitle());
             statement.setString(3, course.getAuthor());
@@ -33,7 +43,13 @@ public class CourseRepositoryImplementation implements CourseRepository{
             statement.setString(13, course.getLevel());
 
             int count=statement.executeUpdate();
-            if(count>0) return course;
+            if(count>0){
+                logger.info("DB updation success");
+                return course;
+            } 
+        }catch(SQLException e){
+            logger.info(e);
+            e.printStackTrace();
         }
         return null;
     }

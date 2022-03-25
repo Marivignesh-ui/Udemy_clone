@@ -1,6 +1,8 @@
 com\ps\repository\CourseRepositoryImplementation.class
-com\ps\domain\Course.class
-com\ps\repository\CourseRepository.class
-com\ps\domain\App.class
 com\ps\repository\DBConnectionManager.class
 com\ps\repository\test.class
+com\ps\domain\Course.class
+com\ps\services\CourseService.class
+com\ps\repository\CourseRepository.class
+com\ps\controller\CourseController.class
+com\ps\domain\App.class

@@ -137,4 +137,13 @@ public class Course {
         this.level = level;
     }
 
+    @Override
+    public String toString() {
+        return "Course [author=" + author + ", category=" + category + ", description=" + description
+                + ", discountPrice=" + discountPrice + ", id=" + id + ", imageUrl=" + imageUrl + ", isBestSeller="
+                + isBestSeller + ", lastUpdated=" + lastUpdated + ", level=" + level + ", numberOfRatings="
+                + numberOfRatings + ", originalPrice=" + originalPrice + ", rating=" + rating + ", title=" + title
+                + "]";
+    }
+
 }
